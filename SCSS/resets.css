@@ -1,0 +1,28 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+section, aside, div {
+  padding: 20px;
+  border-radius: 12px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h1, h2, h3 {
+  margin-top: 0px;
+}
+/*# sourceMappingURL=resets.css.map */

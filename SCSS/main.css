@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Sacramento&display=swap");
+.blue {
+  background-color: #2245ad;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#355ed7), color-stop(70%, #2245ad));
+  background-image: linear-gradient(#355ed7 0%, #2245ad 70%);
+}
+
+.magenta {
+  background-color: #b8246b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#da4089), color-stop(70%, #b8246b));
+  background-image: linear-gradient(#da4089 0%, #b8246b 70%);
+}
+
+.green {
+  background-color: #0fa03f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#14d855), color-stop(70%, #0fa03f));
+  background-image: linear-gradient(#14d855 0%, #0fa03f 70%);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+section, aside, div {
+  padding: 20px;
+  border-radius: 12px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h1, h2, h3 {
+  margin-top: 0px;
+}
+
+body {
+  background-color: black;
+  color: #ffffff;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navigation-wrap {
+  background-color: #101010;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+  margin-left: 2em;
+}
+
+nav a {
+  font-family: "Sacramento";
+  color: #ffffff;
+  font-size: xx-large;
+}
+
+@media (max-width: 950px) {
+  .navigation-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .left-navigation nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 auto;
+  }
+  .left-navigation nav li {
+    margin: 0.5em;
+  }
+  .right-navigation nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .right-navigation nav li {
+    margin: 0.5em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
