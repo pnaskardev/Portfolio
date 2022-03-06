@@ -7,8 +7,17 @@ html {
     box-sizing: inherit;
   }
 
+a:hover,a:focus 
+{
+  border-bottom:4px solid white;
+}
+  header
+  {
+    padding: 10px;
+    border-radius: 12px;
+  }
 section, aside, div {
-    padding: 20px;
+    padding: 10px;
     border-radius: 12px;
   }
 

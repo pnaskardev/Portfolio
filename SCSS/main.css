@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
 .blue {
   background-color: #2245ad;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#355ed7), color-stop(70%, #2245ad));
@@ -28,8 +28,17 @@ html {
           box-sizing: inherit;
 }
 
+a:hover, a:focus {
+  border-bottom: 4px solid white;
+}
+
+header {
+  padding: 10px;
+  border-radius: 12px;
+}
+
 section, aside, div {
-  padding: 20px;
+  padding: 10px;
   border-radius: 12px;
 }
 
@@ -46,80 +55,80 @@ h1, h2, h3 {
 }
 
 body {
-  background-color: black;
+  background-color: #101010;
   color: #ffffff;
   font-size: 1.125rem;
   margin: 0;
 }
 
-.container {
-  width: 100%;
+header {
+  background-color: black;
   margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .navigation-wrap {
-  background-color: #101010;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  text-align: center;
+  background-color: black;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0.5em;
 }
 
 nav ul {
+  list-style: none;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav li {
   list-style: none;
-  margin-left: 2em;
+  margin: 0 1em;
 }
 
 nav a {
-  font-family: "Sacramento";
+  font-family: "Hubballi";
   color: #ffffff;
-  font-size: xx-large;
+  font-size: x-large;
+  text-decoration: none;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 680px) {
   .navigation-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 680px;
+    padding: 0.5em;
   }
-  .left-navigation nav ul {
+  nav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     margin: 0 auto;
   }
-  .left-navigation nav li {
-    margin: 0.5em;
+  nav a {
+    font-size: medium;
   }
-  .right-navigation nav ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0 auto;
-  }
-  .right-navigation nav li {
-    margin: 0.5em;
-  }
+}
+
+.container {
+  margin-top: 40px;
+  padding: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
