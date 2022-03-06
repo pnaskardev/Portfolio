@@ -22,7 +22,6 @@ header
     top: 0;
     left: 0;
     right: 0;
-    // bottom: 0;
 }
 .navigation-wrap
 {
@@ -31,11 +30,16 @@ header
     margin: 0 auto;
     width: 100%;
     padding: 0.5em;
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // right: 0;
-    // overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.left-nav
+{
+    background-color: black;
+}
+.right-nav
+{
+    background-color: black;
 }
 nav
 {
@@ -47,7 +51,7 @@ nav
         justify-content: space-around;
         margin-top: 0;
         margin-bottom: 0;
-        margin-left: auto;
+        margin-left:0;
         margin-right: auto;
    }
    li
@@ -65,26 +69,61 @@ nav
 }
 @media(max-width:680px)
 {
+    .left-nav
+    {
+        margin-left: -0.5em;
+        nav
+        {
+            ul
+            {
+                flex-direction: row;
+                margin-left: 0;
+            }
+            li
+            {
+                margin: 0 0.25em;
+            }
+            a
+            {
+                font-size: medium;
+            }
+    
+        }
+    }
+    .right-nav
+    {
+        margin-right: -0.5em;
+        nav
+        {
+            ul
+            {
+                flex-direction: row;
+                margin-left: 0;
+            }
+            li
+            {
+                margin: 0 0.25em;
+            }
+            a
+            {
+                font-size: medium;
+                // display: none;
+            }
+    
+        }
+    }
     .navigation-wrap
     {
         margin: 0 auto;
         width: 100%;
         max-width: 680px;
         padding: 0.5em;
+        flex-direction:row;
+        justify-content: space-between;
+        text-align: left;
     }
-    nav
-    {
-        ul
-        {
-            flex-direction: row;
-            margin: 0 auto;
-        }
-        a
-        {
-            font-size: medium;
-        }
-        
-    }
+   
+   
 
 }
 // ==================================================================//
@@ -139,6 +178,6 @@ nav
 // rest of the body section
 .container
 {
-    margin-top: 40px;
+    margin-top: 80px;
     padding: 1rem;
 }
