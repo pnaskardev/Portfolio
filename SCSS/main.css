@@ -80,6 +80,20 @@ header {
   margin: 0 auto;
   width: 100%;
   padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.left-nav {
+  background-color: black;
+}
+
+.right-nav {
+  background-color: black;
 }
 
 nav ul {
@@ -92,7 +106,7 @@ nav ul {
       justify-content: space-around;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
 }
 
@@ -109,26 +123,56 @@ nav a {
 }
 
 @media (max-width: 680px) {
+  .left-nav {
+    margin-left: -0.5em;
+  }
+  .left-nav nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 0;
+  }
+  .left-nav nav li {
+    margin: 0 0.25em;
+  }
+  .left-nav nav a {
+    font-size: medium;
+  }
+  .right-nav {
+    margin-right: -0.5em;
+  }
+  .right-nav nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 0;
+  }
+  .right-nav nav li {
+    margin: 0 0.25em;
+  }
+  .right-nav nav a {
+    font-size: medium;
+  }
   .navigation-wrap {
     margin: 0 auto;
     width: 100%;
     max-width: 680px;
     padding: 0.5em;
-  }
-  nav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin: 0 auto;
-  }
-  nav a {
-    font-size: medium;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
   }
 }
 
 .container {
-  margin-top: 40px;
+  margin-top: 80px;
   padding: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
