@@ -18,58 +18,82 @@ header
     margin: 0 auto;
     width: 100%;
     display: flex;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
+
+    
 }
 .navigation-wrap
 {
     text-align: center;
     background-color: black;
     margin: 0 auto;
-    width: 100%;
-    padding: 0.5em;
+    width: 85%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+.left-nav,.right-nav
+{
+    background-color: black;
+    nav
+    {
+        ul
+        {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left:0;
+            margin-right: auto;
+        }
+        li
+        {
+            list-style: none;
+            margin:0 1em;
+        }
+        a
+        {
+            padding: 10px;
+            font-family: $heading-font-family;
+            color: $text-color;
+            font-size:x-large;
+            text-decoration: none;    
+        }
+        
+        
+        
+    }
+    
 }
 .left-nav
 {
-    background-color: black;
+    display: flex;
+    justify-content: center;
 }
 .right-nav
 {
-    background-color: black;
+    display: flex;
+    width: 90;
+    justify-content: center;
+    // padding-top:1.7%;
+    li
+    {
+        padding-left:0.5em;
+    }
+    a:hover
+    {
+        border: none;
+    }
 }
-nav
-{
-   ul
-   {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left:0;
-        margin-right: auto;
-   }
-   li
-   {
-       list-style: none;
-       margin:0 1em;
-   }
-   a
-   {
-       font-family: $heading-font-family;
-       color: $text-color;
-       font-size:x-large;
-       text-decoration: none;
-   }
-}
+
+
 @media(max-width:680px)
 {
-    .left-nav
+    .left-nav,.right-nav
     {
         margin-left: -0.5em;
         nav
@@ -81,33 +105,12 @@ nav
             }
             li
             {
-                margin: 0 0.25em;
+                margin: 0 0.15em;
             }
             a
             {
                 font-size: medium;
-            }
-    
-        }
-    }
-    .right-nav
-    {
-        margin-right: -0.5em;
-        nav
-        {
-            ul
-            {
-                flex-direction: row;
-                margin-left: 0;
-            }
-            li
-            {
-                margin: 0 0.25em;
-            }
-            a
-            {
-                font-size: medium;
-                // display: none;
+                padding:2px;
             }
     
         }
@@ -126,54 +129,6 @@ nav
    
 
 }
-// ==================================================================//
-
-
-// Collapsable menu section
-// .menu-content
-// {
-//     font-family: $heading-font-family;
-//     padding:0 0 0 50px;
-//     li
-//     {
-//         list-style: none;
-//     }
-// }
-
-// .collapsible-menu 
-// {
-//     background-color:black;
-//     padding: 0px 30px;
-//     border-bottom: 3px solid #CDE700;
-//     box-shadow: 1px 2px 3px $bg-color;
-//     ul
-//     {
-//         list-style:none ;
-//         padding: 0;
-//     }
-//     a
-//     {
-//         display: block;
-//         padding: 10px;
-//         text-decoration: none;
-//     }
-//     label
-//     {
-//         font-family: $heading-font-family;
-//         font-size: 56px;
-//         display: block;
-//         background: url('/Icons/technologist_1f9d1-200d-1f4bb.ico') no-repeat left center;
-//         cursor: pointer;
-//         padding: 20px 0 20px 50px;
-//     }
-// }
-// input#menu
-// {
-//     display: none;
-// }
-// ==================================================================//
-
-
 
 // rest of the body section
 .container

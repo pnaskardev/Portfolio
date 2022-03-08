@@ -28,6 +28,18 @@ html {
           box-sizing: inherit;
 }
 
+:root {
+  --gradient:linear-gradient
+  (
+    45deg,
+    #845ec2
+    #d65db1
+    #ff6f91
+    #ffc75f
+    #f9f871
+  );
+}
+
 a:hover, a:focus {
   border-bottom: 4px solid white;
 }
@@ -68,7 +80,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -78,25 +90,20 @@ header {
   text-align: center;
   background-color: black;
   margin: 0 auto;
-  width: 100%;
-  padding: 0.5em;
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.left-nav {
+.left-nav, .right-nav {
   background-color: black;
 }
 
-.right-nav {
-  background-color: black;
-}
-
-nav ul {
+.left-nav nav ul, .right-nav nav ul {
   list-style: none;
   padding: 0;
   display: -webkit-box;
@@ -110,50 +117,63 @@ nav ul {
   margin-right: auto;
 }
 
-nav li {
+.left-nav nav li, .right-nav nav li {
   list-style: none;
   margin: 0 1em;
 }
 
-nav a {
+.left-nav nav a, .right-nav nav a {
+  padding: 10px;
   font-family: "Hubballi";
   color: #ffffff;
   font-size: x-large;
   text-decoration: none;
 }
 
+.left-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.right-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.right-nav li {
+  padding-left: 0.5em;
+}
+
+.right-nav a:hover {
+  border: none;
+}
+
 @media (max-width: 680px) {
-  .left-nav {
+  .left-nav, .right-nav {
     margin-left: -0.5em;
   }
-  .left-nav nav ul {
+  .left-nav nav ul, .right-nav nav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     margin-left: 0;
   }
-  .left-nav nav li {
-    margin: 0 0.25em;
+  .left-nav nav li, .right-nav nav li {
+    margin: 0 0.15em;
   }
-  .left-nav nav a {
+  .left-nav nav a, .right-nav nav a {
     font-size: medium;
-  }
-  .right-nav {
-    margin-right: -0.5em;
-  }
-  .right-nav nav ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-left: 0;
-  }
-  .right-nav nav li {
-    margin: 0 0.25em;
-  }
-  .right-nav nav a {
-    font-size: medium;
+    padding: 2px;
   }
   .navigation-wrap {
     margin: 0 auto;

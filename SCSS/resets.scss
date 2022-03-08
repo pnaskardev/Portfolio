@@ -7,6 +7,18 @@ html {
     box-sizing: inherit;
   }
 
+:root 
+{
+  --gradient:linear-gradient
+  (
+    45deg,
+    #845ec2
+    #d65db1
+    #ff6f91
+    #ffc75f
+    #f9f871
+  );
+}
 a:hover,a:focus 
 {
   border-bottom:4px solid white;
@@ -32,3 +44,5 @@ h1 {
   h1, h2, h3 {
     margin-top: 0px;
   }
+
+  
