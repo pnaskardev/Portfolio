@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
 .blue {
   background-color: #2245ad;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#355ed7), color-stop(70%, #2245ad));
@@ -28,16 +29,22 @@ html {
           box-sizing: inherit;
 }
 
-:root {
-  --gradient:linear-gradient
-  (
-    45deg,
-    #845ec2
-    #d65db1
-    #ff6f91
-    #ffc75f
-    #f9f871
-  );
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 a:hover, a:focus {
@@ -67,7 +74,7 @@ h1, h2, h3 {
 }
 
 body {
-  background-color: #101010;
+  background-color: black;
   color: #ffffff;
   font-size: 1.125rem;
   margin: 0;
@@ -124,7 +131,7 @@ header {
 
 .left-nav nav a, .right-nav nav a {
   padding: 10px;
-  font-family: "Hubballi";
+  font-family: "Roboto Condensed";
   color: #ffffff;
   font-size: x-large;
   text-decoration: none;
@@ -192,7 +199,39 @@ header {
 }
 
 .container {
-  margin-top: 80px;
+  background-color: black;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 200px;
   padding: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.container .gigantic-headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 65%;
+  background-color: black;
+  padding: 2rem;
+}
+
+.container h1 {
+  margin: 0 auto;
+  font-family: "Roboto Condensed";
+  font-size: 5rem;
+}
+
+.title {
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

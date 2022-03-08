@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AACA,OAAO,CAAC,qEAAI",
+    "mappings": "AAAA,OAAO,CAAC,qEAAI;AAEZ,OAAO,CAAC,8FAAI",
     "sources": [
         "typography.scss"
     ],
