@@ -2,6 +2,9 @@
 $medBlue: #2245ad;
 $magenta: #b8246b;
 $green: #0fa03f;
+
+
+
 @mixin bgGradient($color)
 {
     background-image: linear-gradient(lighten($color, 12%) 0%, $color 70%);  
@@ -30,7 +33,7 @@ $green: #0fa03f;
 $primary-color:$green;
 $accent-color:$medBlue;
 $text-color:#ffffff;
-$bg-color:#101010;
+$bg-color:black;
  $font-weights:
 (
     "regular":400,

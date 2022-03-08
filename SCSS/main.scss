@@ -2,6 +2,8 @@
 @import './resets.scss';
 @import './typography.scss';
 
+
+
 body
 {
     background-color:$bg-color;
@@ -79,7 +81,6 @@ header
     display: flex;
     width: 90;
     justify-content: center;
-    // padding-top:1.7%;
     li
     {
         padding-left:0.5em;
@@ -133,6 +134,32 @@ header
 // rest of the body section
 .container
 {
-    margin-top: 80px;
+    background-color:black;
+    height: auto;
+    display: flex;
+    margin-top: 200px;
     padding: 1rem;
+    justify-content:center;
+    width: 100%;
+    .gigantic-headline
+    {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 65%;
+        background-color: black;
+        padding: 2rem;
+    }
+    h1
+    {
+        margin: 0 auto;
+        font-family: $heading-font-family;
+        font-size: 5rem;
+    }
 }
+
+.title
+{
+    color: #fff;
+}
+

@@ -9,16 +9,22 @@ html {
           box-sizing: inherit;
 }
 
-:root {
-  --gradient:linear-gradient
-  (
-    45deg,
-    #845ec2
-    #d65db1
-    #ff6f91
-    #ffc75f
-    #f9f871
-  );
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 a:hover, a:focus {
