@@ -182,6 +182,12 @@ header {
     font-size: medium;
     padding: 2px;
   }
+  .right-nav {
+    display: none;
+  }
+  .left-nav nav li {
+    margin: 0 0.5em;
+  }
   .navigation-wrap {
     margin: 0 auto;
     width: 100%;
@@ -191,10 +197,10 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
   }
 }
 

@@ -116,6 +116,24 @@ header
     
         }
     }
+    .right-nav
+    {
+        display: none;
+    }
+    .left-nav
+    {
+        nav
+        {
+            li
+            {
+                margin: 0 0.5em;
+            }
+            a
+            {
+
+            }
+        }
+    }
     .navigation-wrap
     {
         margin: 0 auto;
@@ -123,8 +141,8 @@ header
         max-width: 680px;
         padding: 0.5em;
         flex-direction:row;
-        justify-content: space-between;
-        text-align: left;
+        justify-content: center;
+        text-align: center;
     }
    
    
