@@ -61,10 +61,12 @@ body
 // rest of the body section
 .container
 {
-    background-color:black;
+    // background-color:#4e54c8;
+    background-color: transparent;
+    background:-webkit-linear-gradient(to left,#8f94fb,#4e54c8);
     height: auto;
     display: flex;
-    margin-top: 200px;
+    margin-top: 50px;
     padding: 1rem;
     justify-content:center;
     width: 100%;
@@ -74,7 +76,7 @@ body
         justify-content: center;
         text-align: center;
         width: 65%;
-        background-color: black;
+        background-color:transparent;
         padding: 2rem;
     }
     h1
@@ -92,4 +94,8 @@ body
 
 
 
+
+
+
 @import './media.scss';
+@import './animations.scss';
