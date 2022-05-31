@@ -1,6 +1,7 @@
 @import './colors.scss';
 @import './resets.scss';
 @import './typography.scss';
+@import './utility.scss';
 
 
 
@@ -14,9 +15,8 @@ body
 
 
 // Navigation section
-#site-nav
+.site-nav
 {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 2.5px;
@@ -44,7 +44,6 @@ body
 }
 .list
 {
-    display: flex;
     list-style: none;
     margin: 0 auto;
     a
