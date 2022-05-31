@@ -14,83 +14,49 @@ body
 
 
 // Navigation section
-header
+#site-nav
 {
-    background-color:black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2.5px;
+    background-color:$nav-bg-color;
     margin: 0 auto;
     width: 100%;
-    display: flex;
+    min-width:20rem;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
 
-    
-}
-.navigation-wrap
-{
-    text-align: center;
-    background-color: black;
-    margin: 0 auto;
-    width: 85%;
-    display: flex;
-    justify-content: space-evenly;
-}
-.left-nav,.right-nav
-{
-    background-color: black;
-    nav
+    ul li:hover
     {
-        ul
-        {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left:0;
-            margin-right: auto;
-        }
-        li
-        {
-            list-style: none;
-            margin:0 1em;
-        }
-        a
-        {
-            padding: 10px;
-            font-family: $heading-font-family;
-            color: $text-color;
-            font-size:x-large;
-            text-decoration: none;    
-        }
-        
-        
-        
+        padding: 1px;
+        background-color: #015d56; 
+        transition:0.9s ;
     }
-    
-}
-.left-nav
-{
-    display: flex;
-    justify-content: center;
-}
-.right-nav
-{
-    display: flex;
-    width: 90;
-    justify-content: center;
-    li
-    {
-        padding-left:0.5em;
-    }
-    a:hover
-    {
-        border: none;
-    }
-}
 
+}
+.menu
+{
+    margin: 0 auto;
+    padding: 5px;
+}
+.list
+{
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    a
+    {
+        padding: 10px;
+        font-family: $heading-font-family;
+        color: $text-color;
+        font-size:large;
+        text-decoration: none;  
+    }
+}
+    
 
 // rest of the body section
 .container

@@ -1,56 +1,26 @@
-@media(max-width:680px)
+@media only screen and  (max-width:600px) 
 {
-    .left-nav,.right-nav
+    #site-nav
     {
-        margin-left: -0.5em;
-        nav
+        justify-content: space-evenly;
+        max-width: 100%;
+        ul li:hover
         {
-            ul
-            {
-                flex-direction: row;
-                margin-left: 0;
-            }
-            li
-            {
-                margin: 0 0.15em;
-            }
-            a
-            {
-                font-size: medium;
-                padding:2px;
-            }
-    
+            padding: 0.5px;
+            background-color: #015d56; 
+            transition:0.9s ;
         }
     }
-    .right-nav
-    {
-        display: none;
-    }
-    .left-nav
-    {
-        nav
-        {
-            li
-            {
-                margin: 0 0.5em;
-            }
-            a
-            {
-
-            }
-        }
-    }
-    .navigation-wrap
+    .menu
     {
         margin: 0 auto;
-        width: 100%;
-        max-width: 680px;
-        padding: 0.5em;
-        flex-direction:row;
-        justify-content: center;
-        text-align: center;
+        width: 90%;
     }
-   
-   
+    .list
+    {
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 10px;
 
+    }
 }

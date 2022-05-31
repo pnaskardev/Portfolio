@@ -80,88 +80,51 @@ body {
   margin: 0;
 }
 
-header {
-  background-color: black;
-  margin: 0 auto;
-  width: 100%;
+#site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2.5px;
+  background-color: #525e65;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 20rem;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
 }
 
-.navigation-wrap {
-  text-align: center;
-  background-color: black;
+#site-nav ul li:hover {
+  padding: 1px;
+  background-color: #015d56;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.menu {
   margin: 0 auto;
-  width: 85%;
+  padding: 5px;
+}
+
+.list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.left-nav, .right-nav {
-  background-color: black;
-}
-
-.left-nav nav ul, .right-nav nav ul {
   list-style: none;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
-.left-nav nav li, .right-nav nav li {
-  list-style: none;
-  margin: 0 1em;
-}
-
-.left-nav nav a, .right-nav nav a {
+.list a {
   padding: 10px;
   font-family: "Roboto Condensed";
   color: #ffffff;
-  font-size: x-large;
+  font-size: large;
   text-decoration: none;
-}
-
-.left-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.right-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 90;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.right-nav li {
-  padding-left: 0.5em;
-}
-
-.right-nav a:hover {
-  border: none;
 }
 
 .container {
@@ -201,43 +164,29 @@ header {
   color: #fff;
 }
 
-@media (max-width: 680px) {
-  .left-nav, .right-nav {
-    margin-left: -0.5em;
+@media only screen and (max-width: 600px) {
+  #site-nav {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    max-width: 100%;
   }
-  .left-nav nav ul, .right-nav nav ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-left: 0;
+  #site-nav ul li:hover {
+    padding: 0.5px;
+    background-color: #015d56;
+    -webkit-transition: 0.9s;
+    transition: 0.9s;
   }
-  .left-nav nav li, .right-nav nav li {
-    margin: 0 0.15em;
-  }
-  .left-nav nav a, .right-nav nav a {
-    font-size: medium;
-    padding: 2px;
-  }
-  .right-nav {
-    display: none;
-  }
-  .left-nav nav li {
-    margin: 0 0.5em;
-  }
-  .navigation-wrap {
+  .menu {
     margin: 0 auto;
+    width: 90%;
+  }
+  .list {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     width: 100%;
-    max-width: 680px;
-    padding: 0.5em;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
+    padding: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */

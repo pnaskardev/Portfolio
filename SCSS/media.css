@@ -1,40 +1,26 @@
-@media (max-width: 680px) {
-  .left-nav, .right-nav {
-    margin-left: -0.5em;
+@media only screen and (max-width: 600px) {
+  #site-nav {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    max-width: 100%;
   }
-  .left-nav nav ul, .right-nav nav ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-left: 0;
+  #site-nav ul li:hover {
+    padding: 0.5px;
+    background-color: #015d56;
+    -webkit-transition: 0.9s;
+    transition: 0.9s;
   }
-  .left-nav nav li, .right-nav nav li {
-    margin: 0 0.15em;
-  }
-  .left-nav nav a, .right-nav nav a {
-    font-size: medium;
-    padding: 2px;
-  }
-  .right-nav {
-    display: none;
-  }
-  .left-nav nav li {
-    margin: 0 0.5em;
-  }
-  .navigation-wrap {
+  .menu {
     margin: 0 auto;
+    width: 90%;
+  }
+  .list {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     width: 100%;
-    max-width: 680px;
-    padding: 0.5em;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
+    padding: 10px;
   }
 }
 /*# sourceMappingURL=media.css.map */
