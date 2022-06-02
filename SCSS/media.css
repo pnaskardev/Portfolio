@@ -5,22 +5,28 @@
             justify-content: space-evenly;
     max-width: 100%;
   }
-  #site-nav ul li:hover {
-    padding: 0.5px;
-    background-color: #015d56;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
   .menu {
-    margin: 0 auto;
-    width: 90%;
+    margin-inline: auto;
+    -ms-flex-negative: 2.5;
+        flex-shrink: 2.5;
   }
   .list {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    width: 100%;
-    padding: 8px;
+    margin-inline: auto;
+    padding: 1vw;
+  }
+  .list a {
+    font-size: 5vw;
+    padding-inline: 2vw;
+  }
+  .gigantic-headline {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .gigantic-headline h1 {
+    font-size: 15vw;
   }
 }
 /*# sourceMappingURL=media.css.map */

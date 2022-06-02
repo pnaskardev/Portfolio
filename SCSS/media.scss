@@ -4,23 +4,34 @@
     {
         justify-content: space-evenly;
         max-width: 100%;
-        ul li:hover
-        {
-            padding: 0.5px;
-            background-color: #015d56; 
-            transition:0.5s ;
-        }
     }
     .menu
     {
-        margin: 0 auto;
-        width: 90%;
+        margin-inline:auto;
+        flex-shrink: 2.5;
     }
     .list
     {
         justify-content: space-evenly;
-        width: 100%;
-        padding: 8px;
-
+        margin-inline: auto;
+        padding: 1vw;
+        a
+        {
+            font-size: 5vw;
+            padding-inline: 2vw;
+        }
     }
+
+
+    .gigantic-headline
+    {
+        flex-wrap: wrap;
+        h1
+        {
+            font-size: 15vw;
+
+        }
+    }
+
+
 }

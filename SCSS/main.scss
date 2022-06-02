@@ -39,16 +39,20 @@ body
 }
 .menu
 {
-    margin: 0 auto;
-    padding: 5px;
+    margin: 0;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .list
 {
     list-style: none;
     margin: 0 auto;
+    padding: 1px;
+    justify-content:space-evenly;
     a
     {
-        padding: 10px;
+        padding-inline: 15px;
         font-family: $heading-font-family;
         color: $text-color;
         font-size:large;
@@ -58,7 +62,7 @@ body
     
 
 // rest of the body section
-.container
+.circle-animation
 {
     // background-color:#4e54c8;
     background-color: transparent;
@@ -84,6 +88,12 @@ body
         font-family: $heading-font-family;
         font-size: 5rem;
     }
+}
+
+
+.gigantic-headline
+{
+    flex-wrap: wrap;
 }
 
 .title
